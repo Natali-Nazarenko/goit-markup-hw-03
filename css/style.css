@@ -143,9 +143,13 @@ a {
 
 .hero {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .hero-header {
+  width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -154,6 +158,8 @@ a {
 }
 
 .hero-button {
+  display: block;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -170,22 +176,68 @@ a {
 
 /* benefits */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits-list {
+  padding: 120px 0;
+  display: flex;
+  gap: 24px;
+}
+.benefits-item {
+  width: calc((100% - 72) / 4);
+}
+
+.benefits-headers {
+  margin-bottom: 8px;
+}
+
 /* our team */
 
 .team {
+  padding: 120px 0;
   background-color: #f4f4fd;
 }
 
 .team-main-header {
+  margin-bottom: 72px;
   text-transform: capitalize;
 }
 
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
 .team-item {
+  border-radius: 0 0 4px 4px;
   background-color: #ffffff;
+  width: calc((100% - 72) / 4);
+}
+
+.team-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.team-info {
+  padding: 32px 16px;
 }
 
 .team-headers {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -194,14 +246,50 @@ a {
 
 /* our portfolio */
 
+.portfolio {
+  padding: 120px 0;
+}
+
 .portfolio-main-header {
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  row-gap: 24px;
+  column-gap: 48px;
+}
+
+.portfolio-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-info {
+  padding: 32px 0;
+}
+
+.portfolio-headers {
+  margin-bottom: 8px;
 }
 
 /* footer */
 
 .studio-footer {
+  padding: 100px 0;
   background-color: #2e2f42;
+}
+
+.footer-container {
+  display: flex;
+  width: 264px;
+}
+
+.footer-logo {
+  display: inline-block;
+  padding-bottom: 16px;
 }
 
 .footer-logo .logo-part {
@@ -209,6 +297,7 @@ a {
 }
 
 .footer-text {
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
