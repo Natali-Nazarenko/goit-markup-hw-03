@@ -147,7 +147,7 @@ a {
 }
 
 .hero-header {
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
   font-size: 56px;
@@ -158,6 +158,10 @@ a {
 }
 
 .hero-button {
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
   display: block;
   margin: 0 auto;
   font-weight: 500;
@@ -176,6 +180,10 @@ a {
 
 /* benefits */
 
+.benefits {
+  padding: 120px 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -190,7 +198,6 @@ a {
 }
 
 .benefits-list {
-  padding: 120px 0;
   display: flex;
   gap: 24px;
 }
@@ -232,7 +239,7 @@ a {
 }
 
 .team-info {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team-headers {
@@ -257,8 +264,13 @@ a {
 
 .portfolio-list {
   display: flex;
-  row-gap: 24px;
-  column-gap: 48px;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-list:first-child {
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-image {
@@ -268,7 +280,8 @@ a {
 }
 
 .portfolio-info {
-  padding: 32px 0;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-headers {
@@ -289,7 +302,7 @@ a {
 
 .footer-logo {
   display: inline-block;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-logo .logo-part {
